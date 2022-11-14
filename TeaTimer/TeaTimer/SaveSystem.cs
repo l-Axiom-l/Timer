@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Xamarin.Forms;
 using System.Linq;
 using Plugin.LocalNotifications;
-using Xamarin.Essentials;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 namespace TeaTimer
 {
-    class SaveSystem
+    public class SaveSystem
     {
         private MainPage Page;
         private Grid layout;
@@ -24,7 +24,7 @@ namespace TeaTimer
         {
             int tempCount = 0;
             
-            List<View> buttons = layout.Children.Where(x => { return x.GetType() == typeof(LongPressButton); }).ToList();
+            List<IView> buttons = layout.Children.Where(x => { return x.GetType() == typeof(LongPressButton); }).ToList();
             ClearSave();
 
             foreach (View button in buttons)

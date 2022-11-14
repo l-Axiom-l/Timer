@@ -4,12 +4,16 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Essentials;
 using Xamarin.Android;
 using Plugin.LocalNotifications;
 using System.Threading;
 using System.Numerics;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+using ViewExtensions = Microsoft.Maui.Controls.ViewExtensions;
+using Microsoft.Maui.Controls.Internals;
+using System.Runtime.CompilerServices;
+using TeaTimer;
 
 namespace TeaTimer
 {
@@ -102,8 +106,8 @@ namespace TeaTimer
             left = false;
             foreach (var item in tempArray)
             {
-                Grid.SetRow(item, temp);
-                Grid.SetColumn(item, Convert.ToInt32(left));
+                layout.SetRow(item, temp);
+                layout.SetColumn(item, Convert.ToInt32(left));
                 ((LongPressButton)item).Position = new Vector2(Convert.ToInt32(left), temp);
                 left = !left;
 
@@ -165,9 +169,9 @@ namespace TeaTimer
                 stop = true;
 
             if (stop)
-                Button.BackgroundColor = Color.Red;
+                Button.BackgroundColor = Colors.Red;
             else
-                Button.BackgroundColor = Color.Green;
+                Button.BackgroundColor = Colors.Green;
         }
 
         public void Tick(object s, EventArgs e)
@@ -264,26 +268,28 @@ namespace TeaTimer
                 RowSpacing = 0,
             };
             Option.Scale = 0;
-            layout.Children.Add(Option, (int)button.Position.X, (int)button.Position.Y);
+            layout.Add(Option, (int)button.Position.X, (int)button.Position.Y);
 
 
             Button button1 = new Button { Text = "Delete" };
-            Option.Children.Add(button1, 0, 0);
+            Option.Add(button1, 0, 0);
+            
+
             buttons.Add(button1);
             button1.Clicked += (s, e) => { Delete.Invoke(this, new EventArgs()); };
 
             Button button2 = new Button { Text = "Edit" };
-            Option.Children.Add(button2, 0, 1);
+            Option.Add(button2, 0, 1);
             buttons.Add(button2);
             button2.Clicked += (s, e) => { Edit.Invoke(this, new EventArgs()); };
 
             Button button3 = new Button { Text = "Reset" };
-            Option.Children.Add(button3, 1, 0);
+            Option.Add(button3, 1, 0);
             buttons.Add(button3);
             button3.Clicked += (s, e) => { Reset.Invoke(this, new EventArgs()); };
 
             Button button4 = new Button { Text = "Close" };
-            Option.Children.Add(button4, 1, 1);
+            Option.Add(button4, 1, 1);
             buttons.Add(button4);
             button4.Clicked += (s, e) => { Close.Invoke(this, new EventArgs()); };
             ViewExtensions.ScaleTo(Option, 1);
@@ -300,6 +306,16 @@ namespace TeaTimer
             foreach (Button b in buttons)
                 Option.Children.Remove(b);
             layout.Children.Remove(Option);
+        }
+    }
+
+    public static class Extension
+    {
+        public static void Add(this Grid grid, IView view, int Row, int Column)
+        {
+            grid.Add(view);
+            grid.SetRow(view, Row);
+            grid.SetColumn(view, Column);
         }
     }
 }
