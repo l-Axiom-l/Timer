@@ -3,9 +3,9 @@
     <OutputType>Library</OutputType>
     <IsPublishable>False</IsPublishable>
     <UseMaui>true</UseMaui>
-    <TargetFrameworks>net7.0-ios;net7.0-android33.0</TargetFrameworks>
+    <TargetFrameworks>net6.0-android31.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
-    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">31.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">28.0</SupportedOSPlatformVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
@@ -13,10 +13,13 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Mono.Android">
-      <HintPath>..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v12.0\Mono.Android.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup />
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android33.0'">
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat">
+      <Version>1.5.1.1</Version>
+    </PackageReference>
+  </ItemGroup>
 </Project>

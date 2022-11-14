@@ -5,15 +5,16 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using TeaTimer;
 
-namespace TeaTimer.Android
+namespace TeaTimer.Droid
 {
-	[Application]
-	public class MainApplication : MauiApplication
-	{
-		public MainApplication(IntPtr handle, JniHandleOwnership ownership)
-			: base(handle, ownership)
-		{
-		}
+
+    [Application]
+    public class MainApplication : MauiApplication
+    {
+        public MainApplication(IntPtr handle, JniHandleOwnership ownership)
+            : base(handle, ownership)
+        {
+        }
 
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
     }
