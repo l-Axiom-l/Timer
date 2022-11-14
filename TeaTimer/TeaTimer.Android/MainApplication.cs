@@ -7,7 +7,6 @@ using TeaTimer;
 
 namespace TeaTimer.Droid
 {
-
     [Application]
     public class MainApplication : MauiApplication
     {

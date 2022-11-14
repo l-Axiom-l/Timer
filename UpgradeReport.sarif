@@ -5,14 +5,14 @@
     {
       "tool": {
         "driver": {
-          "name": "Remove package 'Xamarin.Forms'",
+          "name": "Update TFM",
           "semanticVersion": "",
           "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
           "rules": [
             {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
+              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.SetTFMStep",
               "fullDescription": {
-                "text": "Remove package 'Xamarin.Forms'"
+                "text": "Updated TFM to net7.0-android"
               },
               "helpUri": "about:blank"
             }
@@ -21,89 +21,15 @@
       },
       "results": [
         {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
+          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.SetTFMStep",
           "message": {
-            "text": "Complete: Remove package 'Xamarin.Forms'"
+            "text": "Complete: Updated TFM to net7.0-android"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/TeaTimer.csproj"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Remove package 'Xamarin.Essentials'",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-              "fullDescription": {
-                "text": "Remove package 'Xamarin.Essentials'"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-          "message": {
-            "text": "Complete: Remove package 'Xamarin.Essentials'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/TeaTimer.csproj"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-              "fullDescription": {
-                "text": "Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-          "message": {
-            "text": "Complete: Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/TeaTimer.csproj"
+                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer.Android/TeaTimer.Android.csproj"
                 },
                 "region": {}
               }
@@ -153,14 +79,14 @@
     {
       "tool": {
         "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
+          "name": "Update TFM",
           "semanticVersion": "",
           "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
           "rules": [
             {
-              "id": "UA0014",
+              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.SetTFMStep",
               "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\App.xaml.cs"
+                "text": "Updated TFM to net7.0-android"
               },
               "helpUri": "about:blank"
             }
@@ -169,422 +95,15 @@
       },
       "results": [
         {
-          "ruleId": "UA0014",
+          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.SetTFMStep",
           "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\App.xaml.cs"
+            "text": "Complete: Updated TFM to net7.0-android"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/App.xaml.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0014",
-              "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\AssemblyInfo.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0014",
-          "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\AssemblyInfo.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/AssemblyInfo.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0014",
-              "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\LongPressButton.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0014",
-          "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\LongPressButton.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/LongPressButton.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0014",
-              "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\MainPage.xaml.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0014",
-          "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\MainPage.xaml.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/MainPage.xaml.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0014",
-              "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\SaveSystem.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0014",
-          "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\SaveSystem.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/SaveSystem.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0014: .NET MAUI projects should not reference Xamarin.Forms namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0014",
-              "fullDescription": {
-                "text": "Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\App.xaml.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0014",
-          "message": {
-            "text": "Complete: Diagnostic UA0014 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\App.xaml.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/App.xaml.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0015: .NET MAUI projects should not reference Xamarin.Essentials namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0015",
-              "fullDescription": {
-                "text": "Diagnostic UA0015 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\MainPage.xaml.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0015",
-          "message": {
-            "text": "Complete: Diagnostic UA0015 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\MainPage.xaml.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/MainPage.xaml.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Apply fix for UA0015: .NET MAUI projects should not reference Xamarin.Essentials namespaces",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "UA0015",
-              "fullDescription": {
-                "text": "Diagnostic UA0015 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\SaveSystem.cs"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "UA0015",
-          "message": {
-            "text": "Complete: Diagnostic UA0015 fixed in C:\\Programmieren\\VisualStudio\\TeaTimer\\TeaTimer\\TeaTimer\\SaveSystem.cs"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/SaveSystem.cs"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Convert project file to SDK style",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.TryConvertProjectConverterStep",
-              "fullDescription": {
-                "text": "Project file converted successfully! The project may require additional changes to build successfully against the new .NET target."
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.ProjectFormat.TryConvertProjectConverterStep",
-          "message": {
-            "text": "Complete: Project file converted successfully! The project may require additional changes to build successfully against the new .NET target."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer.Android/TeaTimer.Android.csproj"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Remove package 'Xamarin.Forms'",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-              "fullDescription": {
-                "text": "Remove package 'Xamarin.Forms'"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-          "message": {
-            "text": "Complete: Remove package 'Xamarin.Forms'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer.Android/TeaTimer.Android.csproj"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Remove package 'Xamarin.Essentials'",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-              "fullDescription": {
-                "text": "Remove package 'Xamarin.Essentials'"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-          "message": {
-            "text": "Complete: Remove package 'Xamarin.Essentials'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer.Android/TeaTimer.Android.csproj"
-                },
-                "region": {}
-              }
-            }
-          ]
-        }
-      ],
-      "columnKind": "utf16CodeUnits"
-    },
-    {
-      "tool": {
-        "driver": {
-          "name": "Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'",
-          "semanticVersion": "",
-          "informationUri": "https://github.com/dotnet/upgrade-assistant#usage",
-          "rules": [
-            {
-              "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-              "fullDescription": {
-                "text": "Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'"
-              },
-              "helpUri": "about:blank"
-            }
-          ]
-        }
-      },
-      "results": [
-        {
-          "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Packages.PackageUpdaterStep+PackageManipulationStep`1[[Microsoft.DotNet.UpgradeAssistant.NuGetReference, Microsoft.DotNet.UpgradeAssistant.Abstractions, Version=0.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",
-          "message": {
-            "text": "Complete: Add package 'Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer.Android/TeaTimer.Android.csproj"
+                  "uri": "file:///C:/Programmieren/VisualStudio/TeaTimer/TeaTimer/TeaTimer/TeaTimer.csproj"
                 },
                 "region": {}
               }
@@ -604,7 +123,7 @@
             {
               "id": "Microsoft.DotNet.UpgradeAssistant.Steps.Templates.TemplateInserterStep",
               "fullDescription": {
-                "text": "Added template file MainApplication.cs"
+                "text": "Added template file MauiProgram.cs"
               },
               "helpUri": "about:blank"
             }
@@ -615,13 +134,13 @@
         {
           "ruleId": "Microsoft.DotNet.UpgradeAssistant.Steps.Templates.TemplateInserterStep",
           "message": {
-            "text": "Complete: Added template file MainApplication.cs"
+            "text": "Complete: Added template file MauiProgram.cs"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Users/momox/MainApplication.cs"
+                  "uri": "file:///C:/Users/momox/MauiProgram.cs"
                 },
                 "region": {}
               }

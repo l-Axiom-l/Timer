@@ -3,9 +3,20 @@
     <OutputType>Library</OutputType>
     <IsPublishable>False</IsPublishable>
     <UseMaui>true</UseMaui>
-    <TargetFrameworks>net6.0-android31.0</TargetFrameworks>
+    <TargetFrameworks>net7.0-android</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">28.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
+    <ApplicationTitle>AxiomTimer</ApplicationTitle>
+    <ApplicationDisplayVersion>0.5</ApplicationDisplayVersion>
+    <ApplicationVersion>25</ApplicationVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+    <ApplicationTitle>AxiomTimer</ApplicationTitle>
+    <ApplicationDisplayVersion>0.5</ApplicationDisplayVersion>
+    <ApplicationVersion>25</ApplicationVersion>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
@@ -13,7 +24,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android33.0'">
     <PackageReference Include="Xamarin.Android.Support.Compat">
       <Version>28.0.0.3</Version>
@@ -21,5 +31,18 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat">
       <Version>1.5.1.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

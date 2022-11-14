@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Controls;
-
+using System;
+using Microsoft.Maui;
 namespace TeaTimer
 {
     public partial class App : Application
